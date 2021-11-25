@@ -1,4 +1,11 @@
-/*Template Name: Fruitkha - Responsive Bootstrap4 Shop TemplateTemplate URI: Description: Bootstrap template for fruits or any other kind of shopAuthor: Imran HossainAuthor URI: https://imransdesign.com/Version: 1.0*/
+/*
+Template Name: Fruitkha - Responsive Bootstrap4 Shop Template
+Template URI: 
+Description: Bootstrap template for fruits or any other kind of shop
+Author: Imran Hossain
+Author URI: https://imransdesign.com/
+Version: 1.0
+*/
 /* -----------------------------------------------------------------------------
 
 # Base - Genral & Typography
@@ -483,17 +490,17 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
   font-weight: 900;
   color: #fff;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .breadcrumb-section {
-  padding: 150px 0;
+  padding: 50px 0;
   background-size: cover;
   background-position: center center;
   position: relative;
   z-index: 1;
   background-attachment: fixed;
-  padding-top: 200px;
+  padding-top: 130px;
 }
 
 .breadcrumb-section:after {
@@ -1449,7 +1456,7 @@ html, body {
 }
 
 input[type="submit"] {
-  background-color: #F28123;
+  background-color: #5479F2;
   color: #051922;
   font-weight: 700;
   text-transform: uppercase;
@@ -1518,7 +1525,7 @@ input[type="submit"] {
 div.owl-controls, .owl-controls div {
   height: auto;
   top: 50%;
-  color: #F28123;
+  color: #5479F2;
   font-size: 48px;
 }
 
@@ -1670,8 +1677,8 @@ p.excerpt {
 }
 
 .pagination-wrap ul {
-  margin: 0;
-  padding: 0;
+  margin: 20px;
+  padding: 20px;
   list-style: none;
 }
 
@@ -2366,7 +2373,7 @@ ul.social-link-team li a {
 
 ----------------------------------------------------------------------------- */
 .product-filters {
-  margin-bottom: 80px;
+  margin-bottom: 10px;
 }
 
 .product-filters ul {
@@ -2381,8 +2388,8 @@ ul.social-link-team li a {
   font-weight: 700;
   font-size: 18px;
   margin: 15px;
-  border: 2px solid #051922;
-  color: #323232;
+  border: 2px solid #feffff;
+  color: #ffffff;
   cursor: pointer;
   padding: 8px 20px;
   border-radius: 25px;
