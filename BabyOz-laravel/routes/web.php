@@ -1,6 +1,10 @@
 <?php
 
 use App\Http\Livewire\HomeComponent;
+use App\Http\Livewire\AboutComponent;
+use App\Http\Livewire\JoinUsComponent;
+use App\Http\Livewire\ContactComponent;
+use App\Http\Livewire\ShopComponent;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,4 +22,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', HomeComponent::class);
+Route::get('/home', HomeComponent::class);
+Route::get('/about', AboutComponent::class);
+Route::get('/joinus', JoinUsComponent::class);
+Route::get('/contact', ContactComponent::class);
+Route::get('/shop', ShopComponent::class);

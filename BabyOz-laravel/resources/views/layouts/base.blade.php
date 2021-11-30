@@ -7,7 +7,7 @@
 	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
 
 	<!-- title -->
-	<title>BabyOz</title>
+	<title>BabyOz | {{ $title }}</title>
 
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}">
@@ -61,12 +61,14 @@
 						<!-- menu start -->
 						<nav class="main-menu">
 							<ul>
-								<li class="current-list-item"><a href="#">Home</a></li>
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">News</a></li>
-								<li><a href="#">Products</a></li>
+								<li class="{{ ($title === "Home") ? 'current-list-item' : '' }}"><a href="/home">Home</a></li>
+								<li class="{{ ($title === "About") ? 'current-list-item' : '' }}"><a href="/about">About</a></li>
+								<li class="{{ ($title === "Join Us") ? 'current-list-item' : '' }}"><a href="/joinus">Join Us</a></li>
+								<li class="{{ ($title === "Contact") ? 'current-list-item' : '' }}"><a href="/contact">Contact</a></li>
+								<li class="{{ ($title === "Shop") ? 'current-list-item' : '' }}"><a href="/shop">Shop</a></li>
 								<li>
 									<div class="header-icons">
+										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
 										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
 										<button type="button" class="btn btn-outline-light mr-2">Login</button>
           								<button type="button" class="btn btn-warning">Sign-up</button>
