@@ -61,19 +61,59 @@
 						<!-- menu start -->
 						<nav class="main-menu">
 							<ul>
-								<li class="{{ ($title === "Home") ? 'current-list-item' : '' }}"><a href="/home">Home</a></li>
+								<li class="{{ ($title === "Home") ? 'current-list-item' : '' }}"><a href="/">Home</a></li>
 								<li class="{{ ($title === "About") ? 'current-list-item' : '' }}"><a href="/about">About</a></li>
 								<li class="{{ ($title === "Join Us") ? 'current-list-item' : '' }}"><a href="/joinus">Join Us</a></li>
 								<li class="{{ ($title === "Contact") ? 'current-list-item' : '' }}"><a href="/contact">Contact</a></li>
 								<li class="{{ ($title === "Shop") ? 'current-list-item' : '' }}"><a href="/shop">Shop</a></li>
-								<li>
-									<div class="header-icons">
-										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
-										<button type="button" class="btn btn-outline-light mr-2">Login</button>
-          								<button type="button" class="btn btn-warning">Sign-up</button>
-									</div>
-								</li>
+								
+								@if (Route::has('login'))
+									@auth
+										@if (Auth::user()->utype === 'ADM')
+											<li class="menu-item menu-item-has-children-parent">
+												<a title="My Account" href="#">My Account ({{ Auth::user()->name }})<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+												<ul class="submenu curency">
+													<li class="menu-item">
+														<a title="Dashboard" href="{{ route('admin.dashboard') }}">Dashboard</a>
+													</li>
+													<li class="menu-item">
+														<a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">Logout</a>
+													</li>
+													<form id="logout-form" method="POST" action="{{ route('logout') }}">
+														@csrf
+													</form>
+												</ul>
+											</li>
+										@else
+											<li>
+												<div class="header-icons">
+													<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+													<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+													<a class="profile" href="#"><i class="fas fa-user"> ({{ Auth::user()->name }})</i></a>
+													<ul class="sub-menu">
+														<li><a href="#">Profile</a></li>
+														<li><a href="#">History order</a></li>
+														<li>
+															<a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">Logout</a>
+														</li>
+														<form id="logout-form" method="POST" action="{{ route('logout') }}">
+															@csrf
+														</form>
+													  </ul>
+												</div>
+											</li>
+										@endif
+								@else
+									<li>
+										<div class="header-icons">
+											<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+											<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+											<a class="bordered-btn mr-2" href="{{ route('login') }}">Login</a>
+											<a class="boxed-btn" href="{{ route('register') }}">Register</a>
+										</div>
+									</li>
+								@endif
+								@endif
 							</ul>
 						</nav>
 						<!-- menu end -->

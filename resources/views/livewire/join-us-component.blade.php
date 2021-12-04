@@ -32,7 +32,7 @@
 <!-- end features list section -->
 
 <!-- form reseller section -->
-<div class="checkout-section mt-150 mb-150">
+<div class="checkout-section mt-100 mb-100">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -52,23 +52,23 @@
                             <div class="billing-address-form">
                                 <form action="index.html">
                                     <p><input type="text" placeholder="NIK"></p>
-                                    <p><input type="email" placeholder="Birth Date"></p>
-                                    <p><input type="email" placeholder="Gender"></p>
+                                    <p><input type="text" placeholder="Birth Date"></p>
+                                    <p><input type="text" placeholder="Gender"></p>
                                     <p><input type="text" placeholder="Shop Name"></p>
-                                    <p><input type="tel" placeholder="Shop Addreas"></p>
-                                    <p><input type="email" placeholder="Shipping Addreas"></p>
-                                    <p><input type="email" placeholder="Website"></p>
-                                    <p><input type="email" placeholder="Instagram"></p>
-                                    <p><input type="email" placeholder="Facebook"></p>
-                                    <p><input type="email" placeholder="Shoope"></p>
-                                    <p><input type="email" placeholder="Tokopedia"></p>
-                                    <p><input type="email" placeholder="Bukalapak"></p>
+                                    <p><input type="email" placeholder="Email"></p>
+                                    <p><input type="text" placeholder="Shop Address"></p>
+                                    <p><input type="text" placeholder="Website"></p>
+                                    <p><input type="text" placeholder="Instagram"></p>
+                                    <p><input type="text" placeholder="Facebook"></p>
+                                    <p><input type="text" placeholder="Shopee"></p>
+                                    <p><input type="text" placeholder="Tokopedia"></p>
+                                    <p><input type="text" placeholder="Bukalapak"></p>
+                                    <a type="submit" class="boxed-btn">Join</a>
                                 </form>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <a href="#" class="boxed-btn">Join</a>
                     </div>
                 </div>
             </div>

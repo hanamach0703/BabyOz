@@ -559,7 +559,7 @@ nav.main-menu ul li a {
   color: #fff;
   font-weight: 700;
   display: block;
-  padding: 15px;
+  padding: 10px;
 }
 
 nav.main-menu ul > li {
@@ -711,7 +711,7 @@ nav.main-menu li a {
 }
 
 .top-header-area .header-icons a:hover {
-  color: #3461F4;
+  color: #ffffff;
 }
 
 .sticky-wrapper {
@@ -2387,8 +2387,8 @@ ul.social-link-team li a {
 .product-filters ul li {
   display: inline-block;
   font-weight: 700;
-  font-size: 18px;
-  margin: 15px;
+  font-size: 13px;
+  margin: 10px;
   border: 2px solid #feffff;
   color: #ffffff;
   cursor: pointer;

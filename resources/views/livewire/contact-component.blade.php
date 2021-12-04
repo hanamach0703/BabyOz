@@ -14,7 +14,7 @@
 <!-- end breadcrumb section -->
 
 <!-- contact form -->
-<div class="contact-from-section mt-150 mb-150">
+<div class="contact-from-section mt-100 mb-100">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mb-5 mb-lg-0">
@@ -35,7 +35,7 @@
                         </p>
                         <p><textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea></p>
                         <input type="hidden" name="token" value="FsWga4&@f6aw" />
-                        <p><input type="submit" value="Submit"></p>
+                        <a type="submit" class="boxed-btn">Submit</a>
                     </form>
                 </div>
             </div>

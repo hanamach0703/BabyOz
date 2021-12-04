@@ -73,36 +73,18 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-4 col-md-6 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src=" {{ asset('assets/img/products/product-img-1.jpg') }}" alt=""></a>
+            @foreach ($products as $product)
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-product-item">
+                        <div class="product-image">
+                            <a href="single-product.html"><img src=" {{ asset('assets/img/products') }}/{{ $product->image }}" alt="{{ $product->name }}"></a>
+                        </div>
+                        <h3>{{ $product->name }}</h3>
+                        <p class="product-price">Rp. {{ $product->regular_price }}</p>
+                        <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
                     </div>
-                    <h3>Strawberry</h3>
-                    <p class="product-price"><span>Per Kg</span> 85$ </p>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src=" {{ asset('assets/img/products/product-img-2.jpg') }}" alt=""></a>
-                    </div>
-                    <h3>Berry</h3>
-                    <p class="product-price"><span>Per Kg</span> 70$ </p>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src=" {{ asset('assets/img/products/product-img-3.jpg') }}" alt=""></a>
-                    </div>
-                    <h3>Lemon</h3>
-                    <p class="product-price"><span>Per Kg</span> 35$ </p>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </div>
@@ -121,103 +103,46 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-4 col-md-6 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src=" {{ asset('assets/img/products/product-img-1.jpg') }}" alt=""></a>
+            @foreach ($products as $product)
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-product-item">
+                        <div class="product-image">
+                            <a href="single-product.html"><img src=" {{ asset('assets/img/products')}}/{{ $product->image }}" alt="{{ $product->name }}"></a>
+                        </div>
+                        <h3>{{ $product->name }}</h3>
+                        <p class="product-price">Rp. {{ $product->regular_price }}</p>
+                        <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
                     </div>
-                    <h3>Strawberry</h3>
-                    <p class="product-price"><span>Per Kg</span> 85$ </p>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src=" {{ asset('assets/img/products/product-img-2.jpg') }}" alt=""></a>
-                    </div>
-                    <h3>Berry</h3>
-                    <p class="product-price"><span>Per Kg</span> 70$ </p>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center">
-                <div class="single-product-item">
-                    <div class="product-image">
-                        <a href="single-product.html"><img src=" {{ asset('assets/img/products/product-img-3.jpg') }}" alt=""></a>
-                    </div>
-                    <h3>Lemon</h3>
-                    <p class="product-price"><span>Per Kg</span> 35$ </p>
-                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </div>
 <!-- end New In -->
 
-<!-- latest news -->
-<div class="latest-news mt-100 mb-100">
+<!-- advertisement section -->
+<div class="abt-section mt-100 mb-100">
     <div class="container">
-
         <div class="row">
-            <div class="col-lg-8 offset-lg-2 text-center">
-                <div class="section-title">	
-                    <h3><span class="orange-text">Our</span> News</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.</p>
+            <div class="col-lg-6 col-md-12">
+                <div class="abt-bg">
+                    <a href="ttps://www.youtube.com/embed/xpmPqQTFHt0?controls=0" class="video-play-btn popup-youtube"><i class="fas fa-play"></i></a>
                 </div>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="single-latest-news">
-                    <a href="single-news.html"><div class="latest-news-bg news-bg-1"></div></a>
-                    <div class="news-text-box">
-                        <h3><a href="single-news.html">You will vainly look for fruit on it in autumn.</a></h3>
-                        <p class="blog-meta">
-                            <span class="author"><i class="fas fa-user"></i> Admin</span>
-                            <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
-                        </p>
-                        <p class="excerpt">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
-                        <a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
-                    </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="abt-text">
+                    <p class="top-sub">Since Year 2021</p>
+                    <h2>We are <span class="orange-text">Baby Oz</span></h2>
+                    <p>
+                        Baby Oz Indonesia started a business on the basis of sensitivity to our environmental conditions which are getting worse with the amount of plastic waste that cannot be recycled. 
+                        In addition, we recognize that not all skins of babies and adults have the same sensitivity. 
+                        Some skins are very sensitive to chemicals and plastics. Therefore, we create a variety of reusable products for all ages, such as cloth diaper, menstrual pad, breastpad, cottonpad, adult diaper, etc.
+                    </p>
+                    <p>Baby Oz Indonesia's commitment is to always maintain quality and continue to support the plastic waste-free Indonesia movement.</p>
+                    <a href="about.html" class="boxed-btn mt-4">Know more</a>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-latest-news">
-                    <a href="single-news.html"><div class="latest-news-bg news-bg-2"></div></a>
-                    <div class="news-text-box">
-                        <h3><a href="single-news.html">A man's worth has its season, like tomato.</a></h3>
-                        <p class="blog-meta">
-                            <span class="author"><i class="fas fa-user"></i> Admin</span>
-                            <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
-                        </p>
-                        <p class="excerpt">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
-                        <a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-                <div class="single-latest-news">
-                    <a href="single-news.html"><div class="latest-news-bg news-bg-3"></div></a>
-                    <div class="news-text-box">
-                        <h3><a href="single-news.html">Good thoughts bear good fresh juicy fruit.</a></h3>
-                        <p class="blog-meta">
-                            <span class="author"><i class="fas fa-user"></i> Admin</span>
-                            <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
-                        </p>
-                        <p class="excerpt">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
-                        <a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <a href="news.html" class="boxed-btn">More News</a>
             </div>
         </div>
     </div>
 </div>
-<!-- end latest news -->
+<!-- end advertisement section -->
