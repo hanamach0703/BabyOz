@@ -1469,15 +1469,15 @@ input[type="submit"] {
 }
 
 .homepage-bg-1 {
-  background-image: url(../img/hero-bg.jpg);
+  background-image: url(../img/hero-bg.png);
 }
 
 .homepage-bg-2 {
-  background-image: url(../img/hero-bg-2.jpg);
+  background-image: url(../img/hero-bg-2.png);
 }
 
 .homepage-bg-3 {
-  background-image: url(../img/hero-bg-3.jpg);
+  background-image: url(../img/hero-bg-3.png);
 }
 
 .homepage-slider {
@@ -2067,7 +2067,7 @@ a.video-play-btn {
 }
 
 .abt-bg {
-  background-image: url(../img/abt.jpg);
+  background-image: url(../img/abt.png);
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -2486,7 +2486,7 @@ input[type="number"] {
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 10px;
-  width: 100px;
+  width: 60px;
   margin-bottom: 15px;
 }
 

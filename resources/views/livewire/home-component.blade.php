@@ -126,7 +126,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-12">
                 <div class="abt-bg">
-                    <a href="ttps://www.youtube.com/embed/xpmPqQTFHt0?controls=0" class="video-play-btn popup-youtube"><i class="fas fa-play"></i></a>
+                    <a href="" class="video-play-btn popup-youtube"><i class="fas fa-play"></i></a>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12">

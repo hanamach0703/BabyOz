@@ -7,7 +7,10 @@ use App\Http\Livewire\JoinUsComponent;
 use App\Http\Livewire\ContactComponent;
 use App\Http\Livewire\ShopComponent;
 use App\Http\Livewire\CartComponent;
+use App\Http\Livewire\CheckoutComponent;
+use App\Http\Livewire\DetailComponent;
 use App\Http\Livewire\User\UserDashboardComponent;
+use App\Http\Livewire\ThankyouComponent;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,11 +33,10 @@ Route::get('/about', AboutComponent::class);
 Route::get('/joinus', JoinUsComponent::class);
 Route::get('/contact', ContactComponent::class);
 Route::get('/shop', ShopComponent::class);
-Route::get('/cart', CartComponent::class);
-
-// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-//     return view('dashboard');
-// })->name('dashboard');
+Route::get('/cart', CartComponent::class)->name('product.cart');
+Route::get('/product/{slug}', DetailComponent::class)->name('product.details');
+Route::get('/checkout', CheckoutComponent::class)->name('checkout');
+Route::get('/thankyou', ThankyouComponent::class)->name('thankyou');
 
 // For User or Customer
 Route::middleware(['auth:sanctum', 'verified'])->group(function(){
